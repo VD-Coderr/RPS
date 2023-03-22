@@ -1,0 +1,63 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: 'Delicious Handrawn', cursive;
+  color: white;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+  min-width: 17%;
+  text-align: center;
+  color: #FDFDFF;
+  font-size: 3rem;
+  background-color: #a3395b9c;
+  border-radius: 25px;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+  min-height: 80vh;
+}
+
+.choice {
+  font-size: 3rem;
+}
+
+.col {
+  font-size: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.computer.col {
+  height: 80%;
+}
+
+.col p {
+  flex: 1;
+}
+
+.col p:first-child {
+  flex: 2;
+}
+
