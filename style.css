@@ -35,32 +35,23 @@ header h1 {
 main {
   display: flex;
   justify-content: space-between;
-  min-height: 80vh;
-}
-
-.col {
-  margin: 0 3rem;
-  font-size: 5rem;
-  display: flex;
-  flex-direction: column;
+  height: calc(100vh - 6rem);
 }
 
 .gameTable {
-  justify-content: flex-end;
-}
-.user {
   position: relative;
-  top: 3rem;
-  justify-content: space-between;
+  left: -5rem;
 }
-
-.computer {
-  justify-content: space-evenly;
+.col {
+  margin: 0 3rem;
+  font-size: 5rem;
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr 2fr;
 }
 
 .userControls {
   display: flex;
-  justify-content: space-around;
+  align-items: flex-end;
   gap: 3rem;
 }
 
@@ -83,13 +74,6 @@ button:active {
   transform: scale(.95);
 }
 
-
-#rock {
-  background: center / contain no-repeat url("images/rock.svg");
-}
-#paper {
-  background: center / contain no-repeat url("images/paper.svg");
-}
-#scissors {
-  background: center / contain no-repeat url("images/scissors.svg");
-}
+#rock {background: center / contain no-repeat url("images/rock.svg");}
+#paper {background: center / contain no-repeat url("images/paper.svg");}
+#scissors {background: center / contain no-repeat url("images/scissors.svg");}
