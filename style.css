@@ -38,26 +38,58 @@ main {
   min-height: 80vh;
 }
 
-.choice {
-  font-size: 3rem;
-}
-
 .col {
+  margin: 0 3rem;
   font-size: 5rem;
   display: flex;
   flex-direction: column;
+}
+
+.gameTable {
+  justify-content: flex-end;
+}
+.user {
+  position: relative;
+  top: 3rem;
+  justify-content: space-between;
+}
+
+.computer {
   justify-content: space-evenly;
 }
 
-.computer.col {
-  height: 80%;
+.userControls {
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
 }
 
-.col p {
-  flex: 1;
+.choiceBtn {
+  cursor: pointer;
+  width: 10rem;
+  height: 10rem;
+  border: none;
+  border-radius: 25px;
+  box-shadow:  19px 19px 32px #d19542,
+              -19px -19px 32px #ffc558;
 }
 
-.col p:first-child {
-  flex: 2;
+.choiceBtn:hover {
+  box-shadow:  15px 15px 30px #dd9d46,
+              -15px -15px 30px #ffbd54;
 }
 
+button:active {
+  transform: scale(.95);
+}
+
+
+#rock {
+  background: center / contain no-repeat url("images/rock.svg");
+}
+#paper {
+  background: center / contain no-repeat url("images/paper.svg");
+}
+#scissors {
+  background: center / contain no-repeat url("images/scissors.svg");
+}
