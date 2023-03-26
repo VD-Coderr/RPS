@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
   <title>RPS</title>
 </head>
 <body>
@@ -20,23 +20,24 @@
 
     <div class="user col">
       <p class="player">You</p>
-      <p id="userScore">Score: 0</p>
-      <p id="userGameCount">Game won: 0</p>
+      <p>Round score: <span id="userScore">0</span></p>
+      <p>Games won: <span id="userGameWins">0</span></p>
+      <button class="choiceBtn" id="reset" onclick="resetAll()">Reset</button>
       <div class="userControls">
-        <button class="choiceBtn" id="rock"></button>
-        <button class="choiceBtn" id="paper"></button>
-        <button class="choiceBtn" id="scissors"></button>
+        <button class="choiceBtn" id="rock" data-move="rock"></button>
+        <button class="choiceBtn" id="paper" data-move="paper"></button>
+        <button class="choiceBtn" id="scissors" data-move="scissors"></button>
       </div>
     </div>
 
     <div class="gameTable col">
-      <p class="roundResult">Make your move</p>
+      <p class="roundResult">Make your move!</p>
     </div>
 
     <div class="computer col">
       <p class="player">Computer</p>
-      <p id="computerScore">Score: 0</p>
-      <p id="computerGameCount">Game won: 0</p>
+      <p>Round score: <span id="computerScore">0</span></p>
+      <p>Games won: <span id="computerGameWins">0</span></p>
     </div>
 
   </main>

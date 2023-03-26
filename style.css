@@ -32,21 +32,29 @@ header h1 {
   background-color: #a3395b9c;
   border-radius: 25px;
 }
+
 main {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   height: calc(100vh - 6rem);
 }
 
-.gameTable {
-  position: relative;
-  left: -5rem;
-}
 .col {
-  margin: 0 3rem;
+  margin: 0rem;
   font-size: 5rem;
   display: grid;
-  grid-template-rows: 2fr 1fr 1fr 2fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr 2fr;
+}
+
+.user {
+  margin-left: 3rem;
+}
+.gameTable {
+  justify-items: center;
+}
+
+.roundResult{
+  grid-row: 2 / 4;
 }
 
 .userControls {
@@ -55,19 +63,37 @@ main {
   gap: 3rem;
 }
 
+.computer {
+  justify-items: end;
+  margin-right: 3rem;
+}
+
 .choiceBtn {
   cursor: pointer;
   width: 10rem;
   height: 10rem;
   border: none;
   border-radius: 25px;
-  box-shadow:  19px 19px 32px #d19542,
-              -19px -19px 32px #ffc558;
+  box-shadow:  10px 10px 20px #cf9341,
+              -10px -10px 20px #ffc759;
 }
 
 .choiceBtn:hover {
-  box-shadow:  15px 15px 30px #dd9d46,
-              -15px -15px 30px #ffbd54;
+  box-shadow:  7px 7px 14px #cf9341,
+              -7px -7px 14px #ffc759;
+}
+
+#reset {
+  width: 5rem;
+  height: 5rem;
+  margin-top: auto;
+  font-size: 2rem;
+  font-family: 'Delicious Handrawn', cursive;
+  color: white;  
+  border-radius: 13px;
+  background: #f3ad4d;
+  box-shadow:  9px 9px 20px #d89a45,
+               -9px -9px 20px #ffc055;
 }
 
 button:active {
