@@ -55,6 +55,8 @@ main {
 
 .roundResult{
   grid-row: 2 / 4;
+  position: relative;
+  right: -1rem;
 }
 
 .userControls {
@@ -72,6 +74,7 @@ main {
   cursor: pointer;
   width: 10rem;
   height: 10rem;
+  transition: 0.1s;
   border: none;
   border-radius: 25px;
   box-shadow:  10px 10px 20px #cf9341,
@@ -90,7 +93,7 @@ main {
   font-size: 2rem;
   font-family: 'Delicious Handrawn', cursive;
   color: white;  
-  transition: 0.6s;
+  transition: 0.1s;
   border-radius: 13px;
   background: #f3ad4d;
   box-shadow:  9px 9px 20px #d89a45,
